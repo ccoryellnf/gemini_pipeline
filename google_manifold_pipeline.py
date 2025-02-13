@@ -137,7 +137,7 @@ class Pipeline:
                 model = genai.GenerativeModel(model_name=model_id)
 
             generation_config = GenerationConfig(
-                temperature=body.get("temperature", 0.7),
+                temperature=body.get("temperature", 0.8),
                 top_p=body.get("top_p", 0.9),
                 top_k=body.get("top_k", 40),
                 max_output_tokens=body.get("max_tokens", 8192),
